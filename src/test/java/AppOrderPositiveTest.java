@@ -36,7 +36,7 @@ public class AppOrderPositiveTest {
         driver.quit();
         driver = null;
     }
-    
+
     @Test
     public void shouldBeSuccessfulForm() {
         driver.findElement(By.cssSelector("[data-test-id='name'] input")).sendKeys("Капралова Диана-Диановна");
@@ -48,5 +48,5 @@ public class AppOrderPositiveTest {
         assertEquals(" Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.", actualText);
         assertTrue(actualTextElement.isDisplayed());
     }
-    
+
 }
